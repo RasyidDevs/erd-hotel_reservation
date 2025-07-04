@@ -1,50 +1,52 @@
 # 🏨 Hotel Reservation System (PostgreSQL ERD)
 
-Sistem manajemen pemesanan hotel berbasis **PostgreSQL**, dengan desain Entity Relationship Diagram (ERD) untuk mengelola data tamu, reservasi, pembayaran, fasilitas, dan staff.
-
-## 📌 Fitur Database
-
-- Manajemen data tamu (guest)
-- Sistem reservasi hotel
-- Riwayat pembayaran dan refund
-- Manajemen kamar dan fasilitas
-- Relasi antar entitas lengkap dengan foreign key
+A hotel booking database system designed using **PostgreSQL**, structured with an Entity Relationship Diagram (ERD) to manage guests, reservations, payments, room facilities, and hotel staff data efficiently.
 
 ---
 
-## 🧠 ERD Diagram
+## 📌 Features
 
-Berikut adalah diagram ERD yang digunakan pada sistem ini:
-
-![ERD Diagram](./erd.png) <!-- GANTI DENGAN NAMA FILE SEBENARNYA -->
-
-> 📂 Letakkan gambar ERD (misalnya `erd.png`) di root folder repo ini.
-
----
-
-## 🗃️ Struktur Tabel (Schema: `hotel_reservation`)
-
-| Tabel              | Deskripsi                          |
-|--------------------|-------------------------------------|
-| `guest`            | Menyimpan data tamu hotel          |
-| `reservation`      | Informasi pemesanan kamar          |
-| `room`             | Daftar kamar hotel                 |
-| `facility`         | Fasilitas yang tersedia di kamar   |
-| `staff`            | Pegawai hotel                      |
-| `payment`          | Catatan pembayaran                 |
-| `refund`           | Pengembalian dana (jika ada)       |
-| `reservation_room` | Relasi antara reservasi dan kamar  |
+- Guest information management
+- Room booking system
+- Payment and refund tracking
+- Room and facility details
+- Relational schema with full foreign key constraints
 
 ---
 
-## 🛠️ Cara Import SQL ke PostgreSQL
+## 🧠 Entity Relationship Diagram (ERD)
 
-1. **Buka PostgreSQL (DBeaver / pgAdmin)**
-2. Buat database baru (misalnya `hotel_db`)
-3. Jalankan file `erd_hotel_reservation.sql`
-4. Semua tabel dan data akan terbuat dalam schema `hotel_reservation`
+Here’s the ERD used for this system:
+
+![ERD Diagram](./erd.png) <!-- Replace with your actual image file -->
+
+> 📎 Make sure the ERD image (e.g., `erd.png`) is placed in the root of this repository.
 
 ---
 
-## 📂 Struktur File
+## 🗃️ Table Overview (Schema: `hotel_reservation`)
+
+| Table               | Description                         |
+|---------------------|-------------------------------------|
+| `guest`             | Stores hotel guest information      |
+| `reservation`       | Room reservation data               |
+| `room`              | Hotel room list                     |
+| `facility`          | Room facilities                     |
+| `staff`             | Hotel staff details                 |
+| `payment`           | Payment records                     |
+| `refund`            | Refund history                      |
+| `reservation_room`  | Many-to-many relationship between reservation and room |
+
+---
+
+## 🚀 How to Import SQL into PostgreSQL
+
+1. Open DBeaver / pgAdmin or your preferred SQL client  
+2. Create a new database (e.g., `hotel_db`)
+3. Run the SQL file `erd_hotel_reservation.sql`
+4. All tables and sample data will be created under the `hotel_reservation` schema
+
+---
+
+## 📁 Project Structure
 
