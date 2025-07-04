@@ -42,7 +42,7 @@ Here’s the ERD used for this system:
 
 1. Open DBeaver / pgAdmin or your preferred SQL client  
 2. Create a new database (e.g., `hotel_db`)
-3. Run the SQL file `erd_hotel_reservation.sql`
+3. Run the SQL file `database.sql`
 4. All tables and sample data will be created under the `hotel_reservation` schema
 
 ---
