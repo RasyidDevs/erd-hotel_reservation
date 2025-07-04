@@ -85,5 +85,32 @@ ORDER BY
     r.booking_date DESC;
 ```
 #### Output
-![Database Schema](./assets/query-output.png) 
+![Database Schema](./assets/query-output.png) \
 
+---
+
+## Dummy Tables
+
+### Guest Table 
+![Database Schema](./assets/table-guest.png)
+
+### Reservation Table
+![Database Schema](./assets/table-reservation.png)
+
+### Room Table
+![Room Table](./assets/table-room.png)
+
+### Facility Table
+![Facility Table](./assets/table-facility.png)
+
+### Reservation Room Table
+![Reservation Room Table](./assets/table-reservation_room.png)
+
+### Payment Table
+![Payment Table](./assets/table-payment.png)
+
+### Refund Table
+![Refund Table](./assets/table-refund.png)
+
+### Staff Table
+![Staff Table](./assets/table-staff.png)
