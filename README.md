@@ -18,9 +18,8 @@ A hotel booking database system designed using **PostgreSQL**, structured with a
 
 Here’s the ERD used for this system:
 
-![ERD Diagram](./erd.png) <!-- Replace with your actual image file -->
+![ERD Diagram](./assets/erd.png) 
 
-> 📎 Make sure the ERD image (e.g., `erd.png`) is placed in the root of this repository.
 
 ---
 
@@ -48,5 +47,7 @@ Here’s the ERD used for this system:
 
 ---
 
-## 📁 Project Structure
+## Database Schema
+Here’s the Database Schema used for this system:
 
+![Database Schema](./assets/database-schema.png) 
