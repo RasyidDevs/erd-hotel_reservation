@@ -56,15 +56,11 @@ Here’s the Database Schema used for this system:
 
 ## Example Query
 
-This query calculates the total revenue for each reservation over the last 3 months, including:
-
-Guest details
-
-Payment info
-
-Refund amount (if any)
-
-Final net income per reservation
+- This query calculates the total revenue for each reservation over the last 3 months, including:
+- Guest details
+- Payment info
+- Refund amount (if any)
+- Final net income per reservation
 
 ```sql
 SELECT 
