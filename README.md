@@ -117,5 +117,5 @@ ORDER BY
 
 ---
 
-## For further information contact me on gmail
+## 📞 For further information, contact me on gmail
 ✉️ rasyidbomantoro@gmail.com
