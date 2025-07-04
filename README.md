@@ -14,7 +14,7 @@ A hotel booking database system designed using **PostgreSQL**, structured with a
 
 ---
 
-## 🧠 Entity Relationship Diagram (ERD)
+##  Entity Relationship Diagram (ERD)
 
 Here’s the ERD used for this system:
 
@@ -38,7 +38,7 @@ Here’s the ERD used for this system:
 
 ---
 
-## 🚀 How to Import SQL into PostgreSQL
+##  How to Import SQL into PostgreSQL
 
 1. Open DBeaver / pgAdmin or your preferred SQL client  
 2. Create a new database (e.g., `hotel_db`)
@@ -51,3 +51,43 @@ Here’s the ERD used for this system:
 Here’s the Database Schema used for this system:
 
 ![Database Schema](./assets/database-schema.png) 
+
+---
+
+## Example Query
+
+This query calculates the total revenue for each reservation over the last 3 months, including:
+
+Guest details
+
+Payment info
+
+Refund amount (if any)
+
+Final net income per reservation
+
+```sql
+SELECT 
+    g.full_name,
+    r.id_reservation,
+    r.booking_date,
+    r.check_in_date,
+    r.check_out_date,
+    r.status AS reservation_status,
+    p.amount_paid,
+    p.payment_method,
+    COALESCE(re.refund_amount, 0) AS refund_amount,
+    (p.amount_paid - COALESCE(re.refund_amount, 0)) AS net_income
+FROM 
+    reservation r
+JOIN guest g ON r.guest_id = g.id_guest
+JOIN payment p ON r.id_reservation = p.reservation_id
+LEFT JOIN refund re ON r.id_reservation = re.reservation_id
+WHERE 
+    r.booking_date >= CURRENT_DATE - INTERVAL '3 months'
+ORDER BY 
+    r.booking_date DESC;
+```
+#### Output
+![Database Schema](./assets/query-output.png) 
+
