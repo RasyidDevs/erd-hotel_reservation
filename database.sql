@@ -60,6 +60,7 @@ SET default_table_access_method = heap;
 CREATE TABLE hotel_reservation.facility (
     id_facility integer NOT NULL,
     room_id integer NOT NULL,
+    quantity integer DEFAULT 1,
     name character varying(100) NOT NULL
 );
 
@@ -183,11 +184,11 @@ ALTER TABLE hotel_reservation.staff OWNER TO postgres;
 -- Data for Name: facility; Type: TABLE DATA; Schema: hotel_reservation; Owner: postgres
 --
 
-INSERT INTO hotel_reservation.facility VALUES (1, 101, 'two bed');
-INSERT INTO hotel_reservation.facility VALUES (2, 102, 'refrigrator');
-INSERT INTO hotel_reservation.facility VALUES (3, 101, 'oven');
-INSERT INTO hotel_reservation.facility VALUES (4, 104, 'bathtub');
-INSERT INTO hotel_reservation.facility VALUES (5, 105, 'shower');
+INSERT INTO hotel_reservation.facility VALUES (1, 101, 'bed', 2);
+INSERT INTO hotel_reservation.facility VALUES (2, 102, 'refrigrator' , 1);
+INSERT INTO hotel_reservation.facility VALUES (3, 101, 'oven',1);
+INSERT INTO hotel_reservation.facility VALUES (4, 104, 'bathtub',2);
+INSERT INTO hotel_reservation.facility VALUES (5, 105, 'shower',1);
 
 
 --
