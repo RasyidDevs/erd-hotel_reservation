@@ -114,3 +114,8 @@ ORDER BY
 
 ### Staff Table
 ![Staff Table](./assets/table-staff.png)
+
+---
+
+## For further information contact me on gmail
+✉️ rasyidbomantoro@gmail.com
